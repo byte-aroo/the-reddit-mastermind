@@ -1,0 +1,41 @@
+@reference "../../globals.css";
+
+
+@layer components {
+  .dropdownText {
+    @apply
+      w-full px-4 py-3
+      rounded-2xl
+      bg-white/70 backdrop-blur
+      border border-gray-200
+      shadow-md
+      flex justify-between items-center gap-3
+      font-medium text-black
+      transition-all
+      hover:shadow-lg
+      focus:outline-none;
+  }
+}
+
+@layer components {
+  .dropdownList {
+    @apply
+      absolute z-20 mt-3 w-full
+      rounded-2xl
+      bg-white/70 backdrop-blur
+      shadow-xl
+      border border-gray-100
+      font-medium text-black
+      overflow-hidden
+  }
+}
+
+@layer components {
+  .dropdownButtons {
+    @apply
+      w-full px-4 py-3 text-left
+      flex items-center gap-3
+      transition-colors
+      hover:bg-gray-100
+  }
+}
